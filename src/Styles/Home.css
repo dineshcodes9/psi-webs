@@ -24,3 +24,71 @@
     width: 100%;
     height: auto;
   }
+  .provide_sec{
+    width:100%;
+  }
+  .provide{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-top: 50.5%;
+    justify-content: space-around;
+    border-bottom: 575px solid white;
+    border-left: 1519.5px solid #0081FF;
+  }
+  .provide_h{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    width: 67px;
+    height: 3px;
+    right: 1379px;
+    align-items: baseline;
+  }
+  .eventsSection {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .eventCard {
+    width: 95%;
+    position: relative;
+    margin: 5px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex; 
+  }
+  
+  .eventImage {
+    width: 40%; 
+    height: 100%; 
+    object-fit: cover;
+  }
+  
+  .eventCardContent {
+    padding:20px;
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+    box-sizing: border-box;
+  }
+  
+  .eventTitle {
+    font-size: 4.2rem;
+    color: #000000;
+    font-weight: bold;
+    align-items: left;
+    margin-bottom: 40px;
+  }
+  
+  .eventDescription {
+    font-size: 1.5rem;
+    color: #555;
+  }
