@@ -1,0 +1,26 @@
+.home {
+    text-align: center;
+    background-color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+  }
+
+  .sliderContainers {
+    width: 100%;
+    height: 0vh;
+    margin: 0;
+    margin-top: 0;
+    background-color: wheat;
+  }
+  .sliderContainers p{
+    margin-top: 19%;
+    font-size: 30px;
+  }
+  .sliderImage {
+    width: 100%;
+    height: auto;
+  }
