@@ -14,7 +14,7 @@
     height: 0vh;
     margin: 0;
     margin-top: 0;
-    background-color: wheat;
+    background-color: white;
   }
   .sliderContainers p{
     margin-top: 19%;
@@ -22,28 +22,31 @@
   }
   .sliderImage {
     width: 100%;
-    height: auto;
+    height: 100vh;
   }
   .provide_sec{
     width:100%;
+    height: 50%;
   }
   .provide{
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-top: 50.5%;
+    margin-top: 41.65%;
     justify-content: space-around;
-    border-bottom: 575px solid white;
-    border-left: 1519.5px solid #0081FF;
+    border-bottom: 695px solid white;
+    border-left: 1519.4px solid #0081FF;
   }
   .provide_h{
     display: flex;
     flex-direction: column;
     position: relative;
     color: white;
-    width: 67px;
+    width:600px;
+    font-size: 70px;
+    top: 30px;
     height: 3px;
-    right: 1379px;
+    right: 1479px;
     align-items: baseline;
   }
   .eventsSection {
@@ -62,7 +65,7 @@
     height: 100%;
     background-color: white;
     box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
+    border-radius: 2px;
     overflow: hidden;
     display: flex; 
   }
@@ -89,6 +92,70 @@
   }
   
   .eventDescription {
-    font-size: 1.5rem;
-    color: #555;
+    font-size: 2rem;
+    color: #000000;
+  }
+  .eventtype{
+    margin-bottom: 10px;
+    font-weight: 5px;
+  }
+  .eventbutton {
+    --primary-color: #0081ff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .eventbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .eventbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .eventbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .eventbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .eventbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .eventbutton:hover .arrow:before {
+    right: 0;
   }
