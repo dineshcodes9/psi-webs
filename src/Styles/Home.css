@@ -129,6 +129,62 @@
     gap: 0.6em;
     font-weight: bold;
   }
+
+  .careersSection {
+    position: relative;
+  }
+  
+  
+  .careersHeading {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  .careerImage {
+    width: 50%;
+    height: 400px;
+    display: block;
+  }
+  
+  .descriptionBox {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 129, 255, 0.5); /* Blue color with 50% transparency */
+    color: white;
+    border-radius: 2px;
+    width:59.8%;
+    height: 90%;
+    max-width: 80%;
+  }
+  
+  
+  .descriptionBox h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:6%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .descriptionBox p {
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+  }
+  
+  
   
   .eventbutton .arrow-wrapper {
     display: flex;
@@ -170,3 +226,4 @@
   .eventbutton:hover .arrow:before {
     right: 0;
   }
+
