@@ -4,24 +4,27 @@ import NavBar from '../components/NavBar';
 import '../Styles/Home.css';
 import Earth from '../images/Earth.jpg';
 import Mobile from '../images/Mobile1.png';
-const SliderContainer = () => {  
-    return (
-      <div className="sliderContainers">
-        <img src={Earth} alt="Earth" className='sliderImage' />
-        {/* <video autoPlay loop muted id='video' className='sliderImage'>
-          <source src={Earth} type='video/mp4'/>
-          </video> */}
-      </div>
-    );
-  };
+const SliderContainer = () => {
+  return (
+    <div className="sliderContainers">
+        <img
+          src={Earth}
+          alt="Earth"
+          className="sliderImage" />
+        <span className='content'>
+          Text on Image
+        </span>
+    </div>
+  );
+};
   const Provide = () => {
     return(
-        <div className='provide_sec'>
+        
         <div className='provide'>
             <h1 className='provide_h'>What we Provide?</h1>
     
         </div>
-        </div>
+      
 
     );
 
