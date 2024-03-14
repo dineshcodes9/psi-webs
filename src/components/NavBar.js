@@ -35,18 +35,18 @@ const  NavBar =() => {
           </a>
         </li>
         <li className="nav__item">
-          <a href="/programmes" className="nav__link">
-            Our Programmes
+          <a href="/Services" className="nav__link">
+            Services
           </a>
         </li>
         <li className="nav__item">
-          <a href="/clubs" className="nav__link">
-            Clubs
+          <a href="/careers" className="nav__link">
+            Careers
           </a>
         </li>
         <li className="nav__item">
           <a href="/about" className="nav__link">
-            About Us
+            About 
           </a>
         </li>
         <li className="nav__item">
