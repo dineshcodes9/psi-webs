@@ -12,7 +12,7 @@ const SliderContainer = () => {
           alt="Earth"
           className="sliderImage" />
         <span className='content'>
-          Text on Image
+        Building an Innovative Future
         </span>
     </div>
   );
