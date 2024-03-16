@@ -24,18 +24,86 @@
   } */
   .sliderImage {
     width: 100%;
-    height: 100vh;
+    height: 101vh;
 
   }
+ 
+ 
   .content{
     color: white;
-    font-size: 40px;
+    font-size: 5rem;
     position: absolute;
     top: 150px;
     left:28px;
-    width: 50%;
+    width: 35%;
+    line-height: 60px;
     text-align: left;
     background-color: rgba(0, 0, 0, 0.0)
+  }
+  .content p{
+    font-size: 2rem;
+    margin-top: 60px;
+    line-height: 30px;
+  }
+  .contentbutton {
+    --primary-color: #0081ff;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+
+  .contentbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contentbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .contentbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .contentbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .contentbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .contentbutton:hover .arrow:before {
+    right: 0;
   }
 
 
@@ -43,10 +111,12 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    margin-top: 51.3%;
+    background-color: #0081ff;
+    margin-top: 0%;
+    height: 1000px;
     justify-content: space-around;
-    border-bottom: 695px solid white;
-    border-left: 1519.4px solid #0081FF;
+    /* border-bottom: 695px solid white;
+    border-left: 1519.4px solid #0081FF; */
   }
   .provide_h{
     display: flex;
@@ -112,8 +182,8 @@
   }
   .eventbutton {
     --primary-color: #0081ff;
-    --secondary-color: #fff;
-    --hover-color: #111;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
     --arrow-width: 10px;
     --arrow-stroke: 2px;
     box-sizing: border-box;
@@ -130,62 +200,6 @@
     font-weight: bold;
   }
 
-  .careersSection {
-    position: relative;
-  }
-  
-  
-  .careersHeading {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 24px;
-    color: white;
-    text-align: center;
-  }
-  
-  .imageContainer {
-    position: relative;
-  }
-  
-  .careerImage {
-    width: 50%;
-    height: 400px;
-    display: block;
-  }
-  
-  .descriptionBox {
-    position: absolute;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 129, 255, 0.5); /* Blue color with 50% transparency */
-    color: white;
-    border-radius: 2px;
-    width:59.8%;
-    height: 90%;
-    max-width: 80%;
-  }
-  
-  
-  .descriptionBox h2 {
-    font-size: 30px;
-    margin-top: 40px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left:6%;
-    text-align: left;
-    margin-bottom: 40px;
-  }
-  
-  .descriptionBox p {
-    font-size: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 1.4;
-  }
-  
-  
-  
   .eventbutton .arrow-wrapper {
     display: flex;
     justify-content: center;
@@ -227,3 +241,231 @@
     right: 0;
   }
 
+  .careersSection {
+    position: relative;
+  }
+  
+  
+  .careersHeading {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: white;
+    text-align: center;
+  }
+  
+  .imageContainer {
+    position: relative;
+  }
+  
+  .careerImage {
+    width: 50%;
+    height: 700px;
+    display: block;
+  }
+  
+  .descriptionBox {
+    position: absolute;
+    top: 45%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 129, 255, 0.5); /* Blue color with 50% transparency */
+    color: white;
+    border-radius: 2px;
+    width:59.8%;
+    height: 80%;
+    max-width: 80%;
+  }
+  
+  
+  .descriptionBox h2 {
+    font-size: 30px;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:6%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .descriptionBox p {
+    font-size: 25px;
+    text-align: left;
+    margin-left:50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+  }
+  .cbutton {
+    --primary-color: #fff;
+    --secondary-color: #111;
+    --hover-color: #fff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    margin-left: 40px;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+
+  .cbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .cbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .cbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .cbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .cbutton:hover .arrow:before {
+    right: 0;
+  }
+
+  .contactSection {
+    margin-top: 41.7%;
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contactCard {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex; 
+  }
+  
+  .contactImage {
+    width: 40%; 
+    height: 700px; 
+    object-fit: cover;
+  }
+  
+  .contactCardContent {
+    padding:20px;
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+    box-sizing: border-box;
+  }
+  
+  .contactTitle {
+    font-size: 4.2rem;
+    color: #000000;
+    font-weight: bold;
+    align-items: left;
+    margin-bottom: 40px;
+  }
+  
+  .contactDescription {
+    font-size: 2rem;
+    color: #000000;
+  }
+  .contacttype{
+    margin-bottom: 10px;
+    font-weight: 5px;
+  }
+  .contactbutton {
+    --primary-color: #0081ff;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  
+  
+  
+  .contactbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contactbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .contactbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .contactbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .contactbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .contactbutton:hover .arrow:before {
+    right: 0;
+  }
