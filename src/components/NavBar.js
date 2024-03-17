@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../Styles/NavBar.css";
-import Logo from '../images/Logo.png';
+import Logo from '../images/Navbar/Logo.png';
 
 const  NavBar =() => {
   const [active, setActive] = useState("nav__menu");

@@ -2,10 +2,10 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import '../Styles/Home.css';
-import Earth from '../images/Earth.jpg';
-import Mobile from '../images/Mobile1.png';
-import Career from '../images/career.png';
-import Contacting from '../images/contacting.png';
+import Earth from '../images/Home/Earth.jpg';
+import Mobile from '../images/Home/Mobile1.png';
+import Career from '../images/Home/career.png';
+import Contacting from '../images/Home/contacting.png';
 const SliderContainer = () => {
   return (
     <div className="sliderContainers">
