@@ -1,0 +1,35 @@
+.Contactheading{
+    font-weight: 600;
+    font-size: 55px;
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); */
+    /* justify-content: center; */
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.ButtonsClass{
+    justify-content: center;
+    display: flex;
+    margin-left: -7vw;
+}
+
+.ButtonsClass button{
+    width: 20vw;
+    height: 14vh;
+    margin-left: 6vw;
+    background-color: transparent;
+    border: 3px solid;
+    border-image: linear-gradient(to top, #75BDE5, #65BDB8);
+    border-image-slice: 1;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
+    
+}
+.ButtonsClass button p{
+    margin-bottom: -1vh;
+    font-weight: 500;
+}
+
+.ButtonsClass button img{
+    width: 3vw;
+    height: 6vh;
+}

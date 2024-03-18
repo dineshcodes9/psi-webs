@@ -20,6 +20,7 @@ li {
   gap: 0.5rem;
   align-items: right;
   margin-right: 25px;
+  margin-top: 1.5vh;
 }
 li p{
   margin: 0;
@@ -96,9 +97,10 @@ a {
   transition-timing-function: ease-in-out;
   z-index: 999;
 }
-
-/* .nav_item{
+/* 
+.nav_item{
   justify-content: space-between;
+  margin-top: 20vh;
 } */
 .nav__menu {
   display: flex;

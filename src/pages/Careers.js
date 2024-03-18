@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import NavBar from '../components/NavBar';
 import "../Styles/Careers.css"
-import cave from '../images/Careers/CAVE.jpeg';
+import cover from '../images/Careers/cover.png';
 import careervideo from '../images/Careers/career.mp4';
 import robo from '../images/Careers/robo.jpeg'
 import building from '../images/Careers/building.jpeg'
@@ -23,7 +23,7 @@ const SliderContainer = () => {
             </ol>
         <div className="carousel-inner">
             <div className="carousel-item active">
-                <img className="d-block w-100" src={cave} style={{height:"100vh"}} alt="First slide"/>
+                <img className="d-block w-100" src={cover} style={{height:"100vh"}} alt="First slide"/>
                 <div className='sliderContent'>
                   <p>
                   Forge Your Path, Fuel Your Passion:
@@ -34,21 +34,21 @@ const SliderContainer = () => {
                   <button><strong>Start your Journey ---></strong></button>
                 </div>
             </div>
-            <div className="carousel-item">
-                <img className="d-block w-100" src={cave} style={{height:"100vh"}} alt="Second slide"/>
+            {/* <div className="carousel-item">
+                <img className="d-block w-100" src={cover} style={{height:"100vh"}} alt="Second slide"/>
             </div>
             <div className="carousel-item">
-                <img className="d-block w-100" src={cave} style={{height:"100vh"}} alt="Third slide"/>
-            </div>
+                <img className="d-block w-100" src={cover} style={{height:"100vh"}} alt="Third slide"/>
+            </div> */}
         </div>
-            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            {/* <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="sr-only">Previous</span>
             </a>
             <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="sr-only">Next</span>
-            </a>
+            </a> */}
         </div>
     </div>
   );
@@ -64,7 +64,7 @@ const Career = () => {
         <button>Join us --></button>
        </div>
        <div className='rightpart'>
-        <video  controls>
+        <video autoPlay loop>
           <source src={careervideo} type="video/mp4" />
           {/* <source src="movie.ogg" type="video/ogg" /> */}
           Your browser does not support the video tag.
@@ -139,13 +139,13 @@ const Offer = () =>{
       <p style={{fontSize:'24px'}}>J o i n  <span style={{marginLeft:"1vw"}}>u s</span></p>
       <div style={{display:"flex"}}>
         <div className='joinusleft'>
-          <h1>Entry<span>Level</span></h1>
+          <h1>Entry <span>Level</span></h1>
           <p>As a member of our team, you'll have the opportunity to work on cutting-edge projects that shape the future of science and technology. </p>
           <button>Explore --></button>
         </div>
-        
+        <div className='vl'> </div>
         <div  className='joinusright'>
-          <h1>Lateral<span>Hiring</span></h1>
+          <h1>Lateral <span>Hiring</span></h1>
           <p>From developing groundbreaking inventions to refining existing systems, your contributions will have a meaningful impact.</p>
           <button>Apply Now --></button>
         </div>
