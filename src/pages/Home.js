@@ -6,6 +6,9 @@ import Earth from '../images/Home/Earth.jpg';
 import Mobile from '../images/Home/Mobile1.png';
 import Career from '../images/Home/career.png';
 import Contacting from '../images/Home/contacting.png';
+import Service1 from '../images/Home/Service1.png';
+import Service2 from '../images/Home/Service2.png';
+import Service3 from '../images/Home/Service3.png';
 const SliderContainer = () => {
   return (
     <div className="sliderContainers">
@@ -14,7 +17,7 @@ const SliderContainer = () => {
           alt="Earth"
           className="sliderImage" />
         <span className='content'>
-        Building an Innovative Future
+        <h1>Building an Innovative Future</h1>
      
         <p> We're all about the latest in research and development, focusing on new ideas and helping the next generation of leaders. Our passion lies in advancing science and technology while supporting students in their studies and careers.</p>
         <button className='contentbutton'>
@@ -47,18 +50,58 @@ const Contact = () => {
 
 };
 
-  const Provide = () => {
-    return(
+  // const Provide = () => {
+  //   return(
         
-        <div className='provide'>
-            <h1 className='provide_h'>Services</h1>
+  //       <div className='provide'>
+  //           <h1 className='provide_h'>Services</h1>
     
-        </div>
+  //       </div>
       
 
-    );
+  //   );
 
+  // };
+  const Provide = () => {
+    return (
+      <div className='provide'>
+        <h1 className='provide_h'>Services</h1>
+        <div className="image-container">
+          <div className="service-item">
+            <img src={Service1} alt="Image 1" className="service-image" />
+            <div className="image-content">
+              <h1>Data Security </h1>
+              <p>One of the most widely known and implemented standards is the Payment Card Industry Data Security Standard (PCI DSS), which focuses on securing credit card information.</p>
+              <button className='s-button'>Read More<div class="arrow-wrapper">
+      <div class="arrow"></div>
+      </div></button>
+            </div>
+          </div>
+          <div className="service-item">
+            <img src={Service2} alt="Image 2" className="service-image" />
+            <div className="image-content">
+            <h1>Digital Marketing </h1>
+              <p>One of the most widely known and implemented standards is the Payment Card Industry Data Security Standard (PCI DSS), which focuses on securing credit card information.</p>
+              <button className='s-button'>Read More<div class="arrow-wrapper">
+      <div class="arrow"></div>
+      </div></button>
+            </div>
+          </div>
+          <div className="service-item">
+            <img src={Service3} alt="Image 3" className="service-image" />
+            <div className="image-content">
+            <h1>Internet of Things </h1>
+              <p>One of the most widely known and implemented standards is the Payment Card Industry Data Security Standard (PCI DSS), which focuses on securing credit card information.</p>
+              <button className='s-button'>Read More<div class="arrow-wrapper">
+      <div class="arrow"></div>
+      </div></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
   };
+  
   const Featured = () => {
     return (
       <div className="eventsSection">
@@ -88,7 +131,7 @@ const Contact = () => {
           <img src={Career} alt="Earth" className="careerImage" />
         </div>
         <div className="descriptionBox">
-          <h2>Careers</h2>
+          <h1>Careers</h1>
           <p>
           One of the most widely known and implemented standards is the Payment Card Industry Data Security Standard (PCI DSS), which focuses on securing credit card information. One of the most widely known and implemented standards is the Payment Card Industry Data Security Standard (PCI DSS), which focuses on securing credit card information. 
           </p>

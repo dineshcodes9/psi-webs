@@ -44,6 +44,11 @@
     font-size: 2rem;
     margin-top: 60px;
     line-height: 30px;
+    padding-left: 40px;
+  }
+  .content h1{
+    padding-left: 40px;
+    font-size: 40px;
   }
   .contentbutton {
     --primary-color: #0081ff;
@@ -55,14 +60,17 @@
     border: 0;
     border-radius: 3px;
     color: var(--secondary-color);
-    padding: 1em 1.8em;
+    padding: -0.0em 0.8em;
     background: var(--primary-color);
     display: flex;
     margin-top: 106px;
     transition: 0.2s background;
     align-items: center;
-    gap: 0.6em;
+    text-align: left;
+    margin-left: 40px;
+    gap: 0.7em;
     font-weight: bold;
+    font-size: 15px;
   }
 
   .contentbutton .arrow-wrapper {
@@ -120,16 +128,122 @@
   }
   .provide_h{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     position: relative;
     color: white;
     width:600px;
     font-size: 70px;
-    top: 30px;
-    height: 3px;
-    right: 1479px;
-    align-items: baseline;
+    top: 4px;
+    right: 100px;
+    align-items: start;
+    text-align: left;
+    justify-content: space-evenly;
   }
+  .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .service-item {
+    position: relative;
+    margin-bottom: 10%;
+    margin-right: 40px; /* Adjust as per your requirement */
+  }
+  
+  .service-image {
+    position: relative;
+    width: 400px; /* Adjust width as per your requirement */
+    height: 500px; /* Adjust height as per your requirement */
+  }
+  
+  .image-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 400px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    padding: 10px; /* Adjust padding */
+    color: #fff;
+    border-radius: 5px; /* Adjust border radius */
+  }
+  .image-content h1{
+    font-size: 30px;
+    width: 400px;
+    height: 10px;
+    text-align: left;
+  padding: 30px;
+  }
+  .image-content p{
+    text-align: left;
+    padding: 30px;
+    line-height: 25px;
+  }
+  .s-button {
+    --primary-color: #0081ff;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 1px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    font-size: 13px;
+    margin-left: 30px;
+    margin-top: 40px;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+
+  .s-button .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .s-button .arrow {
+    margin-top: 2px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .s-button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -2.5px;
+    right: 4px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .s-button:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .s-button:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .s-button:hover .arrow:before {
+    right: 0;
+  }
+
+  
   .eventsSection {
     margin-top: 40px;
     margin-bottom: 50px;
@@ -261,7 +375,7 @@
   }
   
   .careerImage {
-    width: 50%;
+    width: 45%;
     height: 700px;
     display: block;
   }
@@ -284,7 +398,7 @@
     font-size: 30px;
     margin-top: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left:6%;
+    margin-left:8%;
     text-align: left;
     margin-bottom: 40px;
   }
@@ -292,7 +406,8 @@
   .descriptionBox p {
     font-size: 25px;
     text-align: left;
-    margin-left:50px;
+    padding:20px;
+    margin-left:55px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     line-height: 1.4;
   }
@@ -312,7 +427,7 @@
     margin-top: 106px;
     transition: 0.2s background;
     align-items: center;
-    margin-left: 40px;
+    margin-left: 77px;
     gap: 0.6em;
     font-weight: bold;
   }
@@ -339,8 +454,8 @@
     border: solid var(--secondary-color);
     border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
     display: inline-block;
-    top: -3px;
-    right: 3px;
+    top: -2px;
+    right: 1px;
     transition: 0.2s;
     padding: 3px;
     transform: rotate(-45deg);
@@ -396,10 +511,12 @@
     font-weight: bold;
     align-items: left;
     margin-bottom: 40px;
+    padding: 40px;
   }
   
   .contactDescription {
     font-size: 2rem;
+    padding: 40px;
     color: #000000;
   }
   .contacttype{
@@ -422,12 +539,10 @@
     margin-top: 106px;
     transition: 0.2s background;
     align-items: center;
+    margin-left: 40px;
     gap: 0.6em;
     font-weight: bold;
   }
-  
-  
-  
   
   .contactbutton .arrow-wrapper {
     display: flex;
