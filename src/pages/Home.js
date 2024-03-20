@@ -159,7 +159,7 @@ const Insights = () => {
   return (
     <div className="tabs" >
       <h1 style={{textAlign:'left',fontSize:'50px',marginLeft:'20px'}}>Insights</h1>
-       {/* <div className="tabs__background">
+       {/* <div className="tabs_background">
     <img src={Insight} alt='Insights' />
     </div> */}
       <ul className="nav_tab">
@@ -233,7 +233,6 @@ const Insights = () => {
                 </p>
               </div>
             </div>
-       
           </div>
           </div>
       
@@ -288,7 +287,6 @@ const Insights = () => {
                 </p>
               </div>
             </div>
-       
           </div>
         </div>
         <div className={activeTab === "events" ? "content__pane active" : "content__pane"}>
@@ -329,8 +327,6 @@ const Insights = () => {
                 </p>
               </div>
             </div>
-            
-       
           </div>
         </div>
       </div>
