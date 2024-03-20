@@ -1,5 +1,5 @@
 // Home.js
-import React, { Component } from 'react';
+import React, { Component,useState } from 'react';
 import NavBar from '../components/NavBar';
 import '../Styles/Home.css';
 import Earth from '../images/Home/Earth.jpg';
@@ -9,6 +9,11 @@ import Contacting from '../images/Home/contacting.png';
 import Service1 from '../images/Home/Service1.png';
 import Service2 from '../images/Home/Service2.png';
 import Service3 from '../images/Home/Service3.png';
+import Insight from '../images/Home/Insights.png';
+import robo from '../images/Careers/robo.jpeg';
+import building from '../images/Careers/building.jpeg';
+import security from '../images/Home/Security.png';
+
 const SliderContainer = () => {
   return (
     <div className="sliderContainers">
@@ -144,7 +149,194 @@ const Contact = () => {
     </div>
   );
 };
-const Discover = () => {
+const Insights = () => {
+  const [activeTab, setActiveTab] = useState("updates");
+
+  const handleClick = (tab) => {
+    setActiveTab(tab);
+  };
+
+  return (
+    <div className="tabs" >
+      <h1 style={{textAlign:'left',fontSize:'50px',marginLeft:'20px'}}>Insights</h1>
+       {/* <div className="tabs__background">
+    <img src={Insight} alt='Insights' />
+    </div> */}
+      <ul className="nav_tab">
+        <li
+          className={activeTab === "updates" ? "active" : ""}
+          onClick={() => handleClick("updates")}
+        >
+          Updates
+        </li>
+        <li
+          className={activeTab === "investors" ? "active" : ""}
+          onClick={() => handleClick("investors")}
+        >
+          Investors
+        </li>
+        <li
+          className={activeTab === "events" ? "active" : ""}
+          onClick={() => handleClick("events")}
+        >
+          Events
+        </li>
+      </ul>
+  
+        <div className={activeTab === "updates" ? "content__pane active" : "content__pane"}>
+          <div className='cardtab_container'>
+            <div className="card_tab">
+              <img src={robo} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={building} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Web Technologies Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={security} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={Contacting} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+       
+          </div>
+          </div>
+      
+        
+        <div className={activeTab === "investors" ? "content__pane active" : "content__pane"}>
+        <div className='cardtab_container'>
+            <div className="card_tab">
+              <img src={robo} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={building} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Web Technologies Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={security} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={Contacting} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+       
+          </div>
+        </div>
+        <div className={activeTab === "events" ? "content__pane active" : "content__pane"}>
+        <div className='cardtab_container'>
+            <div className="card_tab">
+              <img src={robo} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={building} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Web Technologies Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            <div className="card_tab">
+              <img src={security} alt="Internship Updates" /> {/* Replace with your image path and alt text */}
+              <div className="card_desc">
+                <h1>
+                  Internship Updates <br />
+                  2024
+                </h1>
+                <p>
+                  14th Mar 2024
+                </p>
+              </div>
+            </div>
+            
+       
+          </div>
+        </div>
+      </div>
+    
+    
+  );
 
 
 }
@@ -152,12 +344,13 @@ class Home extends Component {
   render() {
     return (
       <div className='home'>
-         <SliderContainer />
+        <SliderContainer />
         <NavBar />
         <Contact />
         <Provide />
         <Featured />
         <Careers />
+        <Insights />
       </div>
     );
   }

@@ -584,3 +584,129 @@
   .contactbutton:hover .arrow:before {
     right: 0;
   }
+
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    height: 350px;
+  }
+
+  
+  .nav_tab {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content:left;
+    margin-left: 10px;
+    margin-bottom: 40px;
+   
+  }
+  
+  .nav_tab li {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .nav_tab li.active {
+    background-color:  white;
+    opacity: 100%;
+    color: black;
+    background: transparent;
+    border-bottom: 3px solid #111;
+  }
+  
+  .content {
+    flex: 1; 
+    justify-content: space-evenly;
+  }
+  
+  .content__pane {
+    display: none;
+  }
+  
+  .content__pane.active {
+    display: block;
+  }
+  .cardtab_container{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+
+  }
+ .card_tab{
+    margin-top: 5vh;
+    margin-top: 2%;
+    margin-right: 3%;
+    border: none;
+    background-color: transparent;
+
+}
+.card_tab img{
+    width: 251px;
+    height: 282px;
+    object-fit: cover;
+}
+
+.card_desc{
+    border: none;
+}
+
+.card_desc h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.card_desc p{
+    /* font-size: 23px; */
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.joinusleft{
+    width: 50vw;
+    font-size: 24px;
+}
+
+.joinusleft h1{
+    font-size: 55px;
+}
+
+.joinusleft span{
+    font-weight: 300;
+}
+
+
+.joinusright{
+    margin-left: 17vw;
+    font-size: 24px;
+    width: 50vw;
+}
+.joinusright h1{
+    font-size: 55px;
+}
+
+.joinusright span{
+    font-weight: 300;
+}
+
+.joinusleft p{
+    margin-top: 5vh;
+}
+
+.joinusright p{
+    margin-top: 5vh;
+}
+
+.joinusleft button{
+    margin-top: 2vh;
+}
+
+.joinusright button{
+    margin-top: 2.125vh;
+}
