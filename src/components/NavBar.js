@@ -57,7 +57,7 @@ const  NavBar =() => {
         </li>
        
       </ul>
-      <button className='loginButton' ><Link to="/login" className="navLink">Login</Link></button>
+      <button className='loginButton' ><Link to="/signup" className="navLink">Login</Link></button>
 
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>
