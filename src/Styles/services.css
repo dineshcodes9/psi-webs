@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Define font-face */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poppins'), url('../Fonts/Poppins/Poppins-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family:'Poppins' ;
+}
+
+.Section1{
+    position: relative;
+    top: 0vh;
+    margin-bottom: 50px; 
+    display: flex;
+}
+.Section2{
+    position: relative;
+    top: 0vh;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 20px;
+}
+
+.leftpart{
+    width: 50vw;
+    margin-left: 7vw;
+    /* margin-right: 10vw; */
+
+}
+
+.leftpart span{
+    font-weight: 1000;
+}
+.heading{
+    font-size: 55px;
+    font-weight: 100;
+    font-weight:lighter ;
+}
+.subheading{
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+.leftpart button{
+    border: none;
+    background-color: #0081FF;
+    margin-top: 4vh;
+    width: 8vw;
+}
+.rightpart{
+    width:auto;
+    overflow: hidden;
+
+}
+
+.Section3{
+    padding-top: 130px;
+    position: relative;
+    top: 00vh;
+    height: 100vh;
+    display: flex;
+    color: white;
+    background-color: black;
+    background-image:url("../images/pexels-tatiana-fet-1105766\ 1.jpg");
+
+}
+
+.Section4{
+    position: relative;
+    top:00vh;
+}
+.Section5{
+    margin-top: 100px;
+    padding: 35px;
+    position: relative;
+    top:00vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.Section5 .leftpart{
+    height: 50vh;
+    width:40vw
+}
+.Section5 .rightpart{
+    height: 50vh;
+    width:50vw;
+}
+
+.rightpart button{
+    border: none;
+    background-color: #0081FF;
+    margin-top: 4vh;
+    width: 8vw;
+}
+.Section6{
+    padding-top: 130px;
+    position: relative;
+    top: 0vh;
+    height: 100vh;
+    display: flex;
+    color: white;
+    background-color: black;
+    background-image:url("../images/pexels-anastasia-shuraeva-7279327\ 1.png");
+}
+.Section7{
+    position: relative;
+    display: flex;
+    top:00vh;
+    padding: 30px;
+}
+
+.Section7 .heading{
+    margin-top: 50px;
+}
+
+.Section8{
+    padding-top: 130px;
+    position: relative;
+    top: 00vh;
+    height: 100vh;
+    display: flex;
+    color: white;
+    background-color: black;
+    background-image:url("../images/pexels-andrea-piacquadio-3769021\ 1.jpg");
+}
+.rightpart .img{
+    width: 30vw;
+    height: 65vh;
+    margin-left: 10vh;
+}

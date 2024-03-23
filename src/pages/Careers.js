@@ -57,7 +57,7 @@ const SliderContainer = () => {
 const Career = () => {
   return(
 
-   <div className="careersSection">
+   <div className="careerSection">
        <div className='leftpart'>
         <p className='heading'><span>Careers </span> with PSI</p>
         <p className='subheading'>Are you ready to embark on a journey of innovation and exploration? Joining Dr. Pallem Setti Innovations means becoming part of a dynamic team dedicated to pushing the boundaries of research and development.</p>
