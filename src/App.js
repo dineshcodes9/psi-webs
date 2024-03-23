@@ -5,6 +5,7 @@ import Services from './pages/services';
 import Careers from './pages/Careers';
 import Contactus from './pages/Contactus';
 import Signup from './pages/SignUp';
+import Blog from './pages/Blog';
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
                     <Route path="/careers" index element={<Careers />} />
                     <Route path="/contact" index element={<Contactus />} />
                     <Route path="/signup"  index element={<Signup />} />
+                    <Route path="/blog" index element={<Blog />} />
 
                 </Routes>
             </BrowserRouter>
