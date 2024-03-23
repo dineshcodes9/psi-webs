@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import "../Styles/NavBar.css";
-import Logo from '../images/Logo.png';
+import Logo from '../images/Navbar/Logo.png';
 
 const  NavBar =() => {
   const [active, setActive] = useState("nav__menu");
@@ -57,7 +57,7 @@ const  NavBar =() => {
         </li>
        
       </ul>
-      <button className='loginButton' ><Link to="/login" className="navLink">Login</Link></button>
+      <button className='loginButton' ><Link to="/signup" className="navLink">Login</Link></button>
 
       <div onClick={navToggle} className={icon}>
         <div className="line1"></div>

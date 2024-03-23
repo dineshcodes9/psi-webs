@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.vl {
+    border-left: 1.5px solid grey;
+    height: 280px;
+    position: relative;
+    top: 0px;
+    left: 8%    ;
+  }
+
+.sliderContent{
+    position: relative;
+    top: -65vh;
+    /* left: 40vw; */
+    color: white;
+    text-align: center;
+    /* font-size: 500px; */
+}
+.sliderContent p{
+    font-size: 50px;
+    margin-bottom: -1vh;
+}
+
+.sliderContent button{
+    margin-top: 5vh;
+    background-color: #4DB4FF;
+    border: none;
+    /* padding: 1vh; */
+    height: 5vh;
+    width: 15vw;
+}
+.careerSection{
+    position: relative;
+    top: 100vh;
+    display: flex;
+}
+
+.leftpart{
+    width: 50vw;
+    margin-left: 7vw;
+}
+
+.leftpart span{
+    font-weight: 500;
+}
+.heading{
+    font-size: 55px;
+    font-weight: 100;
+}
+.subheading{
+    font-size: 24px;
+    font-weight: 500;
+}
+.leftpart button{
+    border: none;
+    background-color: #4DB4FF;
+    margin-top: 4vh;
+    width: 8vw;
+}
+.rightpart{
+    height: 50vh;
+}
+video{
+    object-fit: cover;
+    width: 26vw;
+    height: 65vh;
+    margin-left: 10vw;
+}
+
+.offer{
+    background-color: rgba(0, 129, 255, 0.13);
+    position: relative;
+    top: 125vh;
+    height: 135vh;
+    padding: 7%;
+}
+
+.heading1{
+    font-size: 55px;
+    font-weight: 100;
+}
+
+.heading1 span{
+    font-weight: 500;
+}
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.card{
+    margin-top: 5vh;
+    border: none;
+    background-color: transparent;
+
+}
+.card img{
+    width: 251px;
+    height: 282px;
+    object-fit: cover;
+}
+
+.cardtext{
+    border: none;
+}
+
+.cardtext h1{
+    font-size: 23px;
+    font-weight: 600;
+}
+.cardtext p{
+    /* font-size: 23px; */
+    font-weight: 400;
+    color: grey;
+}
+
+.joinusleft{
+    width: 50vw;
+    font-size: 24px;
+}
+
+.joinusleft h1{
+    font-size: 55px;
+}
+
+.joinusleft span{
+    font-weight: 300;
+}
+
+
+.joinusright{
+    margin-left: 17vw;
+    font-size: 24px;
+    width: 50vw;
+}
+.joinusright h1{
+    font-size: 55px;
+}
+
+.joinusright span{
+    font-weight: 300;
+}
+
+.joinusleft p{
+    margin-top: 5vh;
+}
+
+.joinusright p{
+    margin-top: 5vh;
+}
+
+.joinusleft button{
+    margin-top: 2vh;
+}
+
+.joinusright button{
+    margin-top: 2.125vh;
+}
+
+
+
+.OP{
+    position: relative;
+    top: 125vh;
+    padding: 7%;
+}
+.ourpeople p{
+    font-weight: 300;
+    font-size: 55px;
+}
+.opimg{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 50%;
+} 
+
