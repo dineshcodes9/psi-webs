@@ -61,7 +61,7 @@
 .Section3{
     padding-top: 130px;
     position: relative;
-    top: 100vh;
+    top: 00vh;
     height: 100vh;
     display: flex;
     color: white;
@@ -72,13 +72,13 @@
 
 .Section4{
     position: relative;
-    top:100vh;
+    top:00vh;
 }
 .Section5{
     margin-top: 100px;
     padding: 35px;
     position: relative;
-    top:100vh;
+    top:00vh;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -102,7 +102,7 @@
 .Section6{
     padding-top: 130px;
     position: relative;
-    top: 100vh;
+    top: 0vh;
     height: 100vh;
     display: flex;
     color: white;
@@ -112,7 +112,7 @@
 .Section7{
     position: relative;
     display: flex;
-    top:100vh;
+    top:00vh;
     padding: 30px;
 }
 
@@ -123,7 +123,7 @@
 .Section8{
     padding-top: 130px;
     position: relative;
-    top: 100vh;
+    top: 00vh;
     height: 100vh;
     display: flex;
     color: white;

@@ -2,20 +2,11 @@ import React from 'react';
 import Slider from 'react';
 import "../Styles/services.css"
 import img1 from "../images/Component 11.jpg"
-import img2 from "../images/Earth.jpg"
-import NAV from "../components/NavBar"
+import img2 from "../images/Home/Earth.jpg"
 import ImageSlider from '../components/imageSlider';
 
 
-const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    centerMode: true,
-    centerPadding: '60px', // Adjust as per your requirement
-};
+
 const images = [
     img2,
     img1,
