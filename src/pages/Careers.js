@@ -31,7 +31,7 @@ const SliderContainer = () => {
                   <p>
                   Careers Unlimited
                   </p>
-                  <button><strong>Start your Journey ---></strong></button>
+                  <button><strong>Start your Journey ---</strong></button>
                 </div>
             </div>
             {/* <div className="carousel-item">
@@ -61,7 +61,7 @@ const Career = () => {
        <div className='leftpart'>
         <p className='heading'><span>Careers </span> with PSI</p>
         <p className='subheading'>Are you ready to embark on a journey of innovation and exploration? Joining Dr. Pallem Setti Innovations means becoming part of a dynamic team dedicated to pushing the boundaries of research and development.</p>
-        <button>Join us --></button>
+        <button>Join us --</button>
        </div>
        <div className='rightpart'>
         <video autoPlay loop>
@@ -141,13 +141,13 @@ const Offer = () =>{
         <div className='joinusleft'>
           <h1>Entry <span>Level</span></h1>
           <p>As a member of our team, you'll have the opportunity to work on cutting-edge projects that shape the future of science and technology. </p>
-          <button>Explore --></button>
+          <button>Explore --</button>
         </div>
         <div className='vl'> </div>
         <div  className='joinusright'>
           <h1>Lateral <span>Hiring</span></h1>
           <p>From developing groundbreaking inventions to refining existing systems, your contributions will have a meaningful impact.</p>
-          <button>Apply Now --></button>
+          <button>Apply Now --</button>
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
     /* font-size: 500px; */
 }
 .sliderContent p{
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: -1vh;
 }
 
@@ -90,7 +90,7 @@ span{
     /* font-size: 500px; */
 }
 .sliderContent1{
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: -1vh;
 }
 
@@ -136,4 +136,15 @@ span{
 .form{
     background: white;
     color: black;
+}
+
+.buttonlast{
+    width:"10%";
+    height:"1%";
+    font-size:"14px";
+    position: relative;
+    top: -70vh;
+    left: 47vw;
+    background-color: #4DB4FF;
+    border: none;
 }
