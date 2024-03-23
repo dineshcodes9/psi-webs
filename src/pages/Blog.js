@@ -23,7 +23,7 @@ const SliderContainer = () => {
                   <p>
                   Intern with Us
                   </p>
-                  <button><strong>Apply Now ---></strong></button>
+                  <button><strong>Apply Now </strong></button>
                 </div>
             </div>
         </div>
