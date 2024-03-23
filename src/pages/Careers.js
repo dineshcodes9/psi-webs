@@ -80,7 +80,7 @@ const Offer = () =>{
     <div className='offer'>
       <p className='heading1'>What we <span>Offer?</span></p>
       <div className='cardContainer'>
-        <div className='card'>
+        <div className='Careercard'>
           <img src={robo} />
           <div className='cardtext'>
             <h1>
@@ -93,7 +93,7 @@ const Offer = () =>{
             </p>
           </div>
         </div>
-        <div className='card'>
+        <div className='Careercard'>
           <img src={building} />
           <div className='cardtext'>
             <h1>
@@ -106,7 +106,7 @@ const Offer = () =>{
             </p>
           </div>
         </div>
-        <div className='card'>
+        <div className='Careercard'>
           <img src={pattern} />
           <div className='cardtext'>
             <h1>
@@ -119,7 +119,7 @@ const Offer = () =>{
             </p>
           </div>
         </div>
-        <div className='card'>
+        <div className='Careercard'>
           <img src={employee} />
           <div className='cardtext'>
             <h1>
