@@ -8,7 +8,7 @@
     /* font-size: 500px; */
 }
 .sliderContent p{
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: -1vh;
 }
 
@@ -22,7 +22,7 @@
 }
 .careersSection{
     position: relative;
-    top: 100vh;
+    top: 110vh;
     display: flex;
 }
 
@@ -50,9 +50,9 @@ span{
     margin-top: 4vh;
     width: 8vw;
 }
-.rightpart{
+/* .rightpart{
     height: 50vh;
-}
+} */
 .img1{
     object-fit: cover;
     width: 35vw;
@@ -90,12 +90,12 @@ span{
     /* font-size: 500px; */
 }
 .sliderContent1{
-    font-size: 65px;
+    font-size: 55px;
     margin-bottom: -1vh;
 }
 
 .subheading{
-    font-weight: 100;
+    font-weight: 400;
 }
 
 .rightpart2{
@@ -124,16 +124,26 @@ span{
 }
 
 .card{
-    background-color: red;
+    background-color: white;
     position: relative;
-    top: -50vh;
-    right: 50vw;
-    width: 40vw;
-    height: 50vh;
-    z-index: 1;
+    top: -71vh;
+    height: 84vh;
+    width: 38vw;
+    left: 98vw;
 }
 
 .form{
-    background: white;
+    background-color: white;
     color: black;
+}
+
+.buttonlast{
+    width:"10%";
+    height:"1%";
+    font-size:"14px";
+    position: relative;
+    top: -70vh;
+    left: 47vw;
+    background-color: #4DB4FF;
+    border: none;
 }
