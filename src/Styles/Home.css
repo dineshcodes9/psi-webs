@@ -132,7 +132,7 @@
     position: relative;
     color: white;
     width:600px;
-    font-size: 70px;
+    font-size: 6vw;
     top: 4px;
     right: 100px;
     align-items: start;
@@ -153,7 +153,7 @@
   
   .service-image {
     position: relative;
-    width: 400px; /* Adjust width as per your requirement */
+    width: 28vw; /* Adjust width as per your requirement */
     height: 500px; /* Adjust height as per your requirement */
   }
   
@@ -164,16 +164,16 @@
     width: 400px;
     height: 100px;
     transform: translate(-50%, -50%);
-    padding: 10px; /* Adjust padding */
+    padding: 1vw; /* Adjust padding */
     color: #fff;
     border-radius: 5px; /* Adjust border radius */
   }
   .image-content h1{
-    font-size: 30px;
-    width: 400px;
+    font-size: 2vw;
+    width:35vw;
     height: 10px;
     text-align: left;
-  padding: 30px;
+    padding: 3vw;
   }
   .image-content p{
     text-align: left;
@@ -649,6 +649,444 @@
 
 }
 .card_tab img{
+    width: 20vw;
+    height: 282px;
+    object-fit: cover;
+}
+
+.card_desc{
+    border: none;
+}
+
+.card_desc h1{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.card_desc p{
+    /* font-size: 23px; */
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+
+.joinusleft{
+    width: 50vw;
+    font-size: 24px;
+}
+
+.joinusleft h1{
+    font-size: 55px;
+}
+
+.joinusleft span{
+    font-weight: 300;
+}
+
+
+.joinusright{
+    margin-left: 17vw;
+    font-size: 24px;
+    width: 50vw;
+}
+.joinusright h1{
+    font-size: 55px;
+}
+
+.joinusright span{
+    font-weight: 300;
+}
+
+.joinusleft p{
+    margin-top: 5vh;
+}
+
+.joinusright p{
+    margin-top: 5vh;
+}
+
+.joinusleft button{
+    margin-top: 2vh;
+}
+
+.joinusright button{
+    margin-top: 2.125vh;
+}
+
+@media screen and (max-width:1024px) {
+  .content{
+    width: 50%;
+  }
+  .content p{
+    margin-top: 40px;
+  }
+  .contentbutton{
+    margin-top: 8vh;
+  }
+  .contactSection {
+    margin-top: 55.7%;
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+
+  .image-content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    width: 30vw;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    padding: 2vw; /* Adjust padding */
+    color: #fff;
+    border-radius: 5px; /* Adjust border radius */
+  }
+}
+
+
+
+
+@media (max-width:480px)
+{
+  .content{
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    top: 150px;
+    left:28px;
+    width: 45%;
+    line-height: 60px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.0)
+  }
+  .content p{
+    width: 85vw;
+    font-size: 1.4rem;
+    margin-top: 10px;
+    line-height: 30px;
+    padding-left: 40px;
+  }
+  .content h1{
+    padding-left: 40px;
+    font-size: 5vw;
+  }
+  .contentbutton {
+    --primary-color: #0081ff;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: -0.0em 0.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    text-align: left;
+    margin-left: 40px;
+    gap: 0.7em;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .contentbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contentbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .contentbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .contentbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .contentbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .contentbutton:hover .arrow:before {
+    right: 0;
+  }
+
+
+
+  .contactSection {
+    margin-top: 100%;
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .contactCard {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex; 
+  }
+  
+  .contactImage {
+    width: 40%; 
+    height: 700px; 
+    object-fit: cover;
+  }
+  
+  .contactCardContent {
+    padding:20px;
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+    box-sizing: border-box;
+  }
+  
+  .contactTitle {
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: bold;
+    align-items: left;
+    margin-bottom: 40px;
+    padding: 40px;
+  }
+  
+  .contactDescription {
+    font-size: 1.2rem;
+    padding: 40px;
+    color: #000000;
+  }
+  .contacttype{
+    margin-bottom: 10px;
+    font-weight: 5px;
+  }
+  .contactbutton {
+    --primary-color: #0081ff;
+    --secondary-color: #111;
+    --hover-color: #0081ff;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 3px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    margin-top: 106px;
+    transition: 0.2s background;
+    align-items: center;
+    margin-left: 40px;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .contactbutton .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contactbutton .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  .contactbutton .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  .contactbutton:hover {
+    background-color: var(--hover-color);
+  }
+  
+  .contactbutton:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  .contactbutton:hover .arrow:before {
+    right: 0;
+  }
+
+
+
+  .provide{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    background-color: #0081ff;
+    margin-top: 0%;
+    height: 1800px; /* The height is before in pixels, temporarily it is 1800 px,will be changed when needed*/
+    justify-content: space-around;
+    /* border-bottom: 695px solid white;
+    border-left: 1519.4px solid #0081FF; */
+  }
+  .provide_h{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    color: white;
+    width:100vw;
+    font-size: 4rem;
+    top: 4px;
+    right: 100px;
+    align-items: start;
+    text-align: left;
+    justify-content: space-evenly;
+  }
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .eventsSection {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    height: 50%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .eventCard {
+    width: 95%;
+    position: relative;
+    margin: 5px;
+    height: 100%;
+    background-color: white;
+    box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+    display: flex; 
+  }
+  
+  .eventImage {
+    width: 40%; 
+    height: 450px; 
+    object-fit: cover;
+  }
+  
+  .eventCardContent {
+    padding:20px;
+    text-align: left;
+    width: 60%; /* Adjust as needed */
+    box-sizing: border-box;
+  }
+  
+  .eventTitle {
+    font-size: 2.2rem;
+    color: #000000;
+    font-weight: bold;
+    align-items: left;
+    margin-bottom: 40px;
+  }
+  
+  .eventDescription {
+    font-size: 1.5rem;
+    color: #000000;
+  }
+  .eventtype{
+    margin-bottom: 10px;
+    font-weight: 5px;
+  }
+
+
+
+   
+  .descriptionBox {
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 62, 123, 0.8); /* Blue color with 50% transparency */
+    color: white;
+    border-radius: 2px;
+    width:90.8%;
+    height: 80%;
+    max-width: 80%;
+  }
+  
+  
+  .descriptionBox h1 {
+    font-size:3rem;
+    margin-top: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left:5%;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  
+  .descriptionBox p {
+    font-size: 2rem;
+    text-align: left;
+    padding:20px;
+    margin-left:4%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.4;
+  }
+
+
+
+
+
+  .cardtab_container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+  }
+ .card_tab{
+    margin-top: 5vh;
+    margin-top: 2%;
+    margin-right: 3%;
+    border: none;
+    background-color: transparent;
+
+}
+.card_tab img{
     width: 251px;
     height: 282px;
     object-fit: cover;
@@ -711,4 +1149,5 @@
 
 .joinusright button{
     margin-top: 2.125vh;
+}
 }
